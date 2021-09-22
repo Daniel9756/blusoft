@@ -1,0 +1,32 @@
+
+.say {
+    font-size: 20px;
+    color: #0B4F6C;
+    font-weight: bold;
+    margin-top: 62px;
+  }
+
+  .headline{
+    font-size: 30px;
+    color: "#2d080a";
+    font-weight: bolder;
+    margin-top: 32px;
+    letter-spacing: 4px;
+    line-height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+  }
+  .design{
+      margin-top: 15px;
+      letter-spacing: 2px;
+  }
+
+  .button{
+      margin-top: 42px;
+     color:#fff;
+      background-color: #7c3626;
+      border-radius: 4px;
+      box-shadow: 2px 2px 2px 2px;
+      padding: 6px;
+      text-transform: capitalize;
+  }
