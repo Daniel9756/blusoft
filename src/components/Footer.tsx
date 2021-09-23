@@ -7,12 +7,15 @@ import { MdPermContactCalendar } from 'react-icons/md';
 
 // GiTriceratopsHead MdPermContactCalendar
 const Swing = require('react-reveal/Swing')
+const Fade = require('react-reveal/Fade')
+
 
 function Footer() {
     return (
         <div style={{ marginTop: 120, backgroundColor: '#0B4F6C', padding: 64 }}>
             <Row>
                 <Col>
+                <Fade right>
                 <div className='items'>
                  <div className='list'>
                         <FaHome style={{ fontSize: 28, color: '#60993E', }} />
@@ -32,7 +35,7 @@ function Footer() {
                         </a>
                     </div>
                     </div>
-
+                    </Fade>
                 </Col>
                 <Col>
                     <Swing>
