@@ -48,7 +48,7 @@ function Mission() {
 
                             </div>
                             <h5 className='h5'>Professionalism</h5>
-                            <p>
+                            <p className='page'> 
                                 Modern website User Interface design template for a company or corporate.
                                 This template is ideal for Startup, company, business, corporate, website developer,
                             </p>
@@ -64,7 +64,7 @@ function Mission() {
                                 <GiTeamIdea style={{ fontSize: 42 }} />
                             </div>
                             <h5 className='h5'> Teamwork</h5>
-                            <p>
+                            <p className='page'>
                             We communicate the message to you in a way you can understand,
                              and keep you informed of what is happening at each stage of your project, advancement or system. 
                             </p>
@@ -81,7 +81,7 @@ function Mission() {
                                 <GiIncomingRocket style={{ fontSize: 42 }} />
                             </div>
                             <h5 className='h5'> Communication</h5>
-                            <p>
+                            <p className='page'>
                             We communicate the message to you in a way you can understand,
                              and keep you informed of what is happening at each stage of your project, advancement or system. 
                             </p>

@@ -23,7 +23,7 @@ function Goal() {
                 <Col md={5}>
                     <div style={{ marginTop: 64 }}>
                         <Slide right>
-                            <Image src="/img/boy.png" rounded />
+                            <Image src="/img/boy.jpg" rounded />
                         </Slide>
                     </div>
 
@@ -37,11 +37,11 @@ function Goal() {
 
                                         <GiBarbedStar style={{ fontSize: 62, color: '#60993E' }} />
                                     </div>
-                                    <div style={{ textAlign: 'center', marginBottom: 42 }}>
+                                    <div style={{ textAlign: 'center', marginBottom: 32 }}>
                                         <small className="subtitle1"> Our Mission</small>
                                     </div>
                                     <div>
-                                        <em style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: 42 }}>
+                                        <em  className='mission'>
                                             Bluesoft  provides exciting, game-changing software products to clients around the globe.
                                             We believe real innovation stems from implementing relevant high tech solutions to actual business problems.
                                             We aspire to developing employees who are seen as tech industry thought leaders and who produce leading edge technology.
@@ -59,11 +59,11 @@ function Goal() {
 
                                         <GiStarfighter style={{ fontSize: 62, color: '#60993E' }} />
                                     </div>
-                                    <div style={{ textAlign: 'center', marginBottom: 42 }}>
+                                    <div style={{ textAlign: 'center', marginBottom: 32 }}>
                                         <small className="subtitle1"> Our Vission</small>
                                     </div>
                                     <div>
-                                        <em style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: 42 }}>
+                                        <em className='mission'>
                                             Our vision is to unleash the full potential of the amazing pool of the software engineers in Nigeria
                                             by providing world class outsourcing services.
                                         </em>
@@ -112,8 +112,8 @@ function Goal() {
                                 <small className="subtitle1">Contact Us</small>
                             </div>
                             <div>
-                                <em style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 32, fontSize: 22, fontWeight: 'bold', }}>
-                                    To Require  a Detail  analysis of your   plan
+                                <em style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 32, fontSize: 22, fontWeight: 'bold', textTransform: "capitalize" }}>
+                                    To Enquire  a Detail  analysis of your   plan
                                 </em>
                             </div>
                         </div>

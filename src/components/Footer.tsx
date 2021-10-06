@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Image, Row } from 'react-bootstrap'
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { GiTriceratopsHead } from 'react-icons/gi';
 import { MdPermContactCalendar } from 'react-icons/md';
 
@@ -15,26 +15,26 @@ function Footer() {
         <div style={{ marginTop: 120, backgroundColor: '#0B4F6C', padding: 64 }}>
             <Row>
                 <Col>
-                <Fade right>
-                <div className='items'>
-                 <div className='list'>
-                        <FaHome style={{ fontSize: 28, color: '#60993E', }} />
-                        <a href="#" style={{  color: '#60993E', textDecoration: 'none',  fontSize: 20, marginLeft: 15 }} >
-                            Home
-                        </a>
-                    </div>
-                    <div className='list'>,
-                        <GiTriceratopsHead style={{ fontSize: 28, color: '#60993E', }} />
-                        <a href="#" style={{  color: '#60993E', textDecoration: 'none',  fontSize: 20, marginLeft: 15 }} >
-                            Headline
-                        </a>
-                    </div> <div className='list'>
-                        <MdPermContactCalendar style={{ fontSize: 28, color: '#60993E', }} />
-                        <a href="#" style={{  color: '#60993E', textDecoration: 'none',  fontSize: 20, marginLeft: 15 }} >
-                           Contact Us
-                        </a>
-                    </div>
-                    </div>
+                    <Fade right>
+                        <div className='items'>
+                            <div className='list'>
+                                <FaHome style={{ fontSize: 28, color: '#60993E', }} />
+                                <a href="#" style={{ color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }} >
+                                    Home
+                                </a>
+                            </div>
+                            <div className='list'>,
+                                <GiTriceratopsHead style={{ fontSize: 28, color: '#60993E', }} />
+                                <a href="#" style={{ color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }} >
+                                    Headline
+                                </a>
+                            </div> <div className='list'>
+                                <MdPermContactCalendar style={{ fontSize: 28, color: '#60993E', }} />
+                                <a href="#" style={{ color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }} >
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
                     </Fade>
                 </Col>
                 <Col>
@@ -45,7 +45,7 @@ function Footer() {
                             <small className="subtitle1">Bluesoft</small>
                         </div>
                         <div>
-                            <em style={{ textAlign: 'center', marginTop: 32, fontSize: 32, }}>
+                            <em style={{ textAlign: 'center', marginTop: 32, fontSize: 32,color: '#ffcdbc', }}>
                                 Bluesoft is a software development company with a very greate potential. Our weekly blog is a boostful
                                 impact which attract 10+ readers
                             </em>
@@ -54,6 +54,11 @@ function Footer() {
                 </Col>
 
             </Row>
+            <hr />
+            <div style={{ display: 'flex', justifyContent: "space-around", alignItems: 'center', color: '#ffcdbc', fontSize: 18 }}>
+                <p> copyright 2021<span>&#64;</span>bluesoft.tech    </p>
+                <p><FaGithubSquare /> <FaLinkedin /></p>
+            </div>
         </div>
 
     )

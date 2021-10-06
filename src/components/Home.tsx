@@ -41,7 +41,7 @@ function Home() {
                     </Col>
                     <Col>
                         <Rotate>
-                            <Image src="/img/girl.png" rounded />
+                            <Image src="/img/girl.jpg" rounded />
                         </Rotate>
 
 
