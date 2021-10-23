@@ -73,7 +73,7 @@
        border-radius: 8px;
        padding: 14px;
        font-weight: 22px;
-       height: 240px;      
+       height: 300px;      
        justify-content: center;
        align-items: center;
        margin-top: 14px;
@@ -151,10 +151,38 @@
 margin-top: 84px;
     justify-content: flex-start;
 padding-left: 240px;   }
-
-
+.bloglink{
+    text-decoration: none;
+    font-weight: bold;
+    color: #60993E;
+} 
+.userlink{
+    text-decoration: none;
+    font-size: 18px;
+    color: #42CAFD;
+    font-family: 'Courier New', Courier, monospace;
+}
 .mission{
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     letter-spacing: 2px;
+}
+.RichEditor-styleButton{
+    margin: 4px;
+}
+.RichEditor-activeButton{
+    color: #A3333D; 
+}
+.RichEditor-blockquote{
+    background-color: #BFC3BA;
+    padding: 16px;
+    color: #3A4E48;
+    font-size: 12px;
+    overflow: scroll;
+    max-height: 500px;
+}
+.code-block{
+    background-color: #F6F7EB;
+    color: #3A4E48;
+    font-size: 12px;
 }

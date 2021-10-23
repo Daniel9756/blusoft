@@ -47,7 +47,7 @@ function Footer() {
                         <div>
                             <em style={{ textAlign: 'center', marginTop: 32, fontSize: 32,color: '#ffcdbc', }}>
                                 Bluesoft is a software development company with a very greate potential. Our weekly blog is a boostful
-                                impact which attract 10+ readers
+                                impact which attract 100, 000+ readers
                             </em>
                         </div>
                     </Swing>
