@@ -130,7 +130,7 @@ function Goal() {
                         <em style={{ textAlign: 'center', marginTop: 32, fontSize: 22, fontWeight: 'bold',  color: '#ffcdbc'  }}>
                             It takes more than just the company to achieve a better world. We know that we must work together
                             and work with others to plan and execute harmonious IT projects.
-                            We follow this code to improve your business. And that has made all the difference
+                            We follow this code to improve your business. And that has made all the difference.
                         </em>
                     </div>
                 </div>

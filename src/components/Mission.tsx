@@ -17,82 +17,83 @@ const Flip = require('react-reveal/Flip')
 function Mission() {
     return (
         <>
-        <Container className="cont">
-       
-        <Row >
-            <Col>
-                <div className="subtitle">
-                    Our core values
-                </div>
+            <Container className="cont">
 
-            </Col>
-            <Col>
-                <Flip left>
-                    <div className='design'>
-                        <em>
-                        We believe in both personal and financial growth for those inside and outside our business. 
-                        Bluesoft aims to grow in its finances, relationships and results to promote quality outcomes for our clients and our business.
-                       </em>
-                    </div>
-                </Flip>
-            </Col>
+                <Row >
+                    <Col>
+                        <div className="subtitle">
+                            Our core values
+                        </div>
 
-        </Row>
-        <div className='mission'>
-            <Row>
-                <Col md={4}>
-                    <Fade left>
-                        <div className='box'>
-                            <div className='icondiv'>
-                                <GiSprout style={{ fontSize: 42 }} />
+                    </Col>
+                    <Col>
+                        <Flip left>
+                            <div className='design'>
+                                <em>
+                                    We believe in both personal and financial growth for those inside and outside our business.
+                                    Bluesoft aims to grow in its finances, relationships and results to promote quality outcomes for our clients and our business.
+                                </em>
+                            </div>
+                        </Flip>
+                    </Col>
+
+                </Row>
+                <div className='mission'>
+                    <Row>
+                        <Col md={4}>
+                            <Fade left>
+                                <div className='box'>
+                                    <div className='icondiv'>
+                                        <GiSprout style={{ fontSize: 42 }} />
+
+                                    </div>
+                                    <h5 className='h5'>Professionalism</h5>
+                                    <p className='page'>
+                                        Bluesoft technology is a one of the best Software Development Company in Nigeria.
+                                        Our team of experienced UI/UX designers and Programmers creates user interfaces for Web and software development services
+                                  
+                                </p>
+                            </div>
+                        </Fade>
+                    </Col>
+                    <Col md={4}>
+                        <Wobble>
+
+                            <div className='box'>
+                                <div className='icondiv'>
+
+                                    <GiTeamIdea style={{ fontSize: 42 }} />
+                                </div>
+                                <h5 className='h5'> Teamwork</h5>
+                                <p className='page'>
+                                    What separates the good players from a great player is that a great player is willing to give up their
+                                    own personal achievement for the achievement of the group
+                                </p>
 
                             </div>
-                            <h5 className='h5'>Professionalism</h5>
-                            <p className='page'> 
-                                Modern website User Interface design template for a company or corporate.
-                                This template is ideal for Startup, company, business, corporate, website developer,
-                            </p>
-                        </div>
-                    </Fade>
-                </Col>
-                <Col  md={4}>
-                    <Wobble>
+                        </Wobble>
 
-                        <div className='box'>
-                            <div className='icondiv'>
+                    </Col>
+                    <Col md={4}>
+                        <Fade right>
+                            <div className='box'>
+                                <div className='icondiv'>
 
-                                <GiTeamIdea style={{ fontSize: 42 }} />
+                                    <GiIncomingRocket style={{ fontSize: 42 }} />
+                                </div>
+                                <h5 className='h5'> Communication</h5>
+                                <p className='page'>
+                                    We communicate the message to you in a way you can understand,
+                                    and keep you informed of what is happening at each stage of your project, advancement or system.
+                                </p>
+
+
                             </div>
-                            <h5 className='h5'> Teamwork</h5>
-                            <p className='page'>
-                            We communicate the message to you in a way you can understand,
-                             and keep you informed of what is happening at each stage of your project, advancement or system. 
-                            </p>
-
-                        </div>
-                    </Wobble>
-
-                </Col>
-                <Col  md={4}>
-                    <Fade right>
-                        <div className='box'>
-                            <div className='icondiv'>
-
-                                <GiIncomingRocket style={{ fontSize: 42 }} />
-                            </div>
-                            <h5 className='h5'> Communication</h5>
-                            <p className='page'>
-                            We communicate the message to you in a way you can understand,
-                             and keep you informed of what is happening at each stage of your project, advancement or system. 
-                            </p>
-
-
-                        </div>
-                    </Fade>
-                </Col>
-            </Row>
-        </div>
-    </Container>
+                        </Fade>
+                    </Col>
+                </Row>
+            </div>
+        </Container>
     
     </>
     )
