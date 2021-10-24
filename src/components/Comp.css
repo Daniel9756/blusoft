@@ -186,3 +186,64 @@ padding-left: 240px;   }
     color: #3A4E48;
     font-size: 12px;
 }
+.h3{
+    color: #3A4E48;
+    font-size: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.address{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* margin-top: 28px; */
+}
+.addresstext{
+    margin-right: 40px;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.location{
+    padding: 28px;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: #0B4F6C;   
+    margin-left: -100px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 28px;
+    padding: 26px;
+    background-color: #BFC3BA;
+    /* height: 400px; */
+    padding-top: 36px;
+    border-radius: 12px;
+}
+.formelement{
+    margin: 16px
+}
+.input{
+    width: 460px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #A3333D
+}
+
+.input:active{
+    background-color: 1px solid #A3333D;
+    color: #3A4E48;
+}
+.emailbtn{
+    color: #fff;
+    background-color: #7c3626;
+    border-radius: 12px;
+    padding: 5px;
+    width: 80px
+}
+.emailbtn:hover{
+    background-color: #A3333D;
+}
