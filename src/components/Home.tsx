@@ -1,6 +1,4 @@
 import React from 'react'
-import Sidebar from './Sidebar'
-import Body from './Body'
 import Mission from './Mission'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import "./Comp.css"
@@ -8,8 +6,6 @@ import Goal from './Goal'
 import { Featured } from './Featured'
 // import Fade Wobble Slide Flip from 'react-reveal/Fade';
 const Rotate = require('react-reveal/Rotate')
-const Fade = require('react-reveal/Fade')
-const Wobble = require('react-reveal/Wobble')
 const Slide = require('react-reveal/Slide')
 const Flip = require('react-reveal/Flip')
 

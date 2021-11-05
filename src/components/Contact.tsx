@@ -1,22 +1,30 @@
-import React, { useRef } from 'react';
-import { Col, Row, Container } from "react-bootstrap"
+import React, { useRef, useState } from 'react';
+import { Col, Row, Container, Button } from "react-bootstrap"
 import { MdLocationOn, MdPhone } from "react-icons/md"
 import { IoIosMail } from "react-icons/io"
 import emailjs from 'emailjs-com';
-import { useForm } from "react-hook-form";
 import { FaHome, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { FiLoader } from 'react-icons/fi';
 
-const config: string | undefined = (process.env.REACT_APP_EMAIL_SERVICE_ID as string);
-const config1: string | undefined = (process.env.REACT_APP_EMAIL_TEMPLATE_ID as string);
-const config2: string | undefined = (process.env.REACT_APP_EMAIL_USER_ID as string);
 
-function Contact({ process }: any) {
+const config: any = (process.env.REACT_APP_EMAIL_SERVICE_ID as string);
+const config1: any = (process.env.REACT_APP_EMAIL_TEMPLATE_ID as string);
+const config2: any = (process.env.REACT_APP_EMAIL_USER_ID as string);
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = (data: any) => {
-        emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, data, process.env.REACT_APP_EMAIL_USER_ID)
+function Contact() {
+    const [message, setMessage] = useState('')
+    const [loading, setLoading] = useState(false)
+    const form: any = useRef();
+
+    const sendEmail = (e: any) => {
+        e.preventDefault();
+        setLoading(true)
+        emailjs.sendForm(config, config1, form.current, config2)
             .then((result) => {
-                console.log(result.text);
+                if (result.status === 200) {
+                    setMessage("Thanks for your Message. We will get intouch soon")
+                    setLoading(false)
+                }
             }, (error) => {
                 console.log(error.text);
             });
@@ -30,29 +38,30 @@ function Contact({ process }: any) {
 
                 <Col md={8}>
 
-                    <form onSubmit={handleSubmit(onSubmit)} className="form">
+                    <form ref={form} onSubmit={sendEmail} className="form">
 
                         <h3 style={{ marginLeft: 16 }}>GET IN TOUCH</h3>
-                        <em style={{ marginLeft: 16, marginBottom: "32px" }}> Feel free to drop us a ine below</em>
+                        <em style={{ marginLeft: 16, marginBottom: "32px" }}> Feel free to drop us a line below</em>
                         <div className="formelement">
-                            <input {...register("Name", { required: true, maxLength: 40 })} className="input" />
+                            <input type="text" name="user_name" className="input" placeholder="Your Full Name" />
 
                         </div>
                         <div className="formelement">
-                            <input {...register("email", { required: true })} className="input" />
+                            <input type="email" name="user_email" className="input" placeholder="Your Email Address" />
+
 
                         </div>
                         <div className="formelement">
-                            <textarea  {...register("message", { min: 30, })} className="input" />
+                            <textarea name="message" className="input" placeholder="Your Message" />
 
                         </div>
+                        <h5 style={{ color: "#60993E", fontFamily: "cursive", marginLeft: 6, marginRight: 6 }}>{message}</h5>
                         <div className="formelement">
-
-                            <button type="submit" className="emailbtn" >SEND</button>
+                            <button type="submit" className="emailbtn" >{loading ? <FiLoader /> : 'SEND'}</button>
                         </div>
                     </form>
                 </Col>
-                <Col md={4} >
+                <Col md={4}>
                     <div className="location" style={{ zIndex: 100 }}>
                         <h2>Contact Us</h2>
                         <div className="address">

@@ -36,22 +36,22 @@ function Profile({ match }: RouteComponentProps<TParams>) {
                             </div>
                         </div>
                         <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", flexDirection: "column" }}>
-                            <em className="h3">{data?.getOneAuthor?.fullname}</em>
+                            <em className="bio">{data?.getOneAuthor?.fullname}</em>
 
-                            <em className="h3">{data?.getOneAuthor?.occupation}</em>
+                            <em className="bio">{data?.getOneAuthor?.occupation}</em>
 
-                            <em className="h3">{data?.getOneAuthor?.email}</em>
+                            <em className="bio">{data?.getOneAuthor?.email}</em>
                         </div>
                     </div>
                 </Col>
                 <Col md={6} style={{ marginTop: "32px" }}>
 
                     <div>
-                        <p className="h3">{data?.getOneAuthor?.bio}</p>
+                        <p className="bio">{data?.getOneAuthor?.bio}</p>
                     </div>
                     <hr />
                     <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "baseline", }}>
-                        <h4 className="h3">Role:</h4>           <p className="h3" style={{ marginTop: "22px", fontFamily: "serif", marginLeft: "22px" }}>{data?.getOneAuthor?.role}</p>
+                        <h4>Role:</h4>           <p className="h3" style={{ marginTop: "22px", fontFamily: "serif", marginLeft: "22px" }}>{data?.getOneAuthor?.role}</p>
                     </div>
                     <div>
                         <h2>Social</h2>
