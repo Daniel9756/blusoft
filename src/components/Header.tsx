@@ -15,7 +15,7 @@ const Header = () => {
                     <em>luesoft</em>
                 </Link>          
 
-                    <Link to="/headline" style={{ fontWeight: "bold", color: "#7c3626", textDecoration:"none" }}>Headlines</Link>
+                    {/* <Link to="/headline" style={{ fontWeight: "bold", color: "#7c3626", textDecoration:"none" }}>Headlines</Link> */}
 
            
                     <Link to="/contact" style={{ fontWeight: "bold", color: "#7c3626", textDecoration:"none" }}>Contact Us</Link>
