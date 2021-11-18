@@ -3,6 +3,7 @@ import { Col, Image, Row } from 'react-bootstrap'
 import { FaHome, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { GiTriceratopsHead } from 'react-icons/gi';
 import { MdPermContactCalendar } from 'react-icons/md';
+import { Link } from "react-router-dom"
 
 
 // GiTriceratopsHead MdPermContactCalendar
@@ -19,20 +20,18 @@ function Footer() {
                         <div className='items'>
                             <div className='list'>
                                 <FaHome style={{ fontSize: 28, color: '#60993E', }} />
-                                <a href="#" style={{ color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }} >
-                                    Home
-                                </a>
+                                <Link to="/" style={{ fontWeight: "bold", color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}>Home</Link>
+                               
                             </div>
                             <div className='list'>,
                                 <GiTriceratopsHead style={{ fontSize: 28, color: '#60993E', }} />
-                                <a href="#" style={{ color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }} >
-                                    Headline
-                                </a>
+                                <Link to="/headline" style={{ fontWeight: "bold", color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}>Headline</Link>
+                               
                             </div> <div className='list'>
                                 <MdPermContactCalendar style={{ fontSize: 28, color: '#60993E', }} />
-                                <a href="#" style={{ color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }} >
-                                    Contact Us
-                                </a>
+                                <Link to="/contact" style={{ fontWeight: "bold",color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}> Contact Us</Link>
+
+                               
                             </div>
                         </div>
                     </Fade>
@@ -45,7 +44,7 @@ function Footer() {
                             <small className="subtitle1">Bluesoft</small>
                         </div>
                         <div>
-                            <em style={{ textAlign: 'center', marginTop: 32, fontSize: 32,color: '#ffcdbc', }}>
+                            <em style={{ textAlign: 'center', marginTop: 32, fontSize: 32, color: '#ffcdbc', }}>
                                 Bluesoft is a software development company with a very greate potential. Our weekly blog is a boostful
                                 impact which attract 100, 000+ readers
                             </em>

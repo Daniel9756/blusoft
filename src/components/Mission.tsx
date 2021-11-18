@@ -49,7 +49,7 @@ function Mission() {
                                     </div>
                                     <h5 className='h5'>Professionalism</h5>
                                     <p className='page'>
-                                        Bluesoft technology is a one of the best Software Development Company in Nigeria.
+                                      
                                         Our team of experienced UI/UX designers and Programmers creates user interfaces for Web and software development services
                                   
                                 </p>

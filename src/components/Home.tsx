@@ -1,15 +1,12 @@
 import React from 'react'
-import Sidebar from './Sidebar'
-import Body from './Body'
 import Mission from './Mission'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import "./Comp.css"
 import Goal from './Goal'
 import { Featured } from './Featured'
+import { useHistory } from 'react-router-dom'
 // import Fade Wobble Slide Flip from 'react-reveal/Fade';
 const Rotate = require('react-reveal/Rotate')
-const Fade = require('react-reveal/Fade')
-const Wobble = require('react-reveal/Wobble')
 const Slide = require('react-reveal/Slide')
 const Flip = require('react-reveal/Flip')
 
@@ -17,6 +14,8 @@ const Flip = require('react-reveal/Flip')
 
 
 function Home() {
+    const history = useHistory()
+
     return (
 
         <div className='home'>
@@ -35,7 +34,7 @@ function Home() {
                                         We have three fundamental tenets - Innovation, Transparency and Agility – that are central to our staff-client interactions
                                     </em>
                                 </div>
-                                <button className='button'>Get started Now</button>
+                                <button className='button' onClick={() => history.push("/contact")}>Get started Now</button>
                             </Slide>
                         </Col>
                         <Col>

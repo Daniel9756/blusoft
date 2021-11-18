@@ -24,7 +24,7 @@ query getOneArticle($id: String) {
     body
   body
     AuthorId 
-  
+  url
 }
   }
 `;
@@ -41,6 +41,7 @@ query getFeatured {
     published
     AuthorId
     createdAt
+    url
   }
 }
   
@@ -58,6 +59,7 @@ query getPublished {
     published
     fullname
     featured
+    url
   }
 }
 `;

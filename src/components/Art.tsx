@@ -27,7 +27,7 @@ export const Art = (props: any) => {
                 <hr />
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
-                        <em style={{ marginLeft: 8, fontWeight: 'bold' }} >Visitors :</em><small style={{ marginLeft: 8, }} >2,000+</small>
+                        <em style={{ marginLeft: 8, fontWeight: 'bold' }} >Author</em>
                     </div>
                     <Link to={`profile/${AuthorId}`} className='userlink'>
 

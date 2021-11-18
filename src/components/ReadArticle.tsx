@@ -9,7 +9,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 import { GET_AN_ARTICLE } from "./Gql"
 // import ArticleDetail from './ArticleDetail';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 
 
 
@@ -30,14 +30,18 @@ export const ReadArticle = ({ match }: RouteComponentProps<TParams>) => {
     return (
         <div className='read'>
             <Row>
-                <Col md={2}></Col>
-                <Col md={8}>
-                    {/* <pre>{error?.graphQLErrors.map(({ message }, i) => (
-                        <span key={i} className="error">{message}</span>
-                    ))}
-                    </pre> */}
+                <Col md={3}>
+
+                    
+                </Col>
+                <Col md={6}>
+                   
                     <div>
                         <h2 className="h3">{data?.getOneArticle?.title}</h2>
+                    </div>
+                    <div className="artimage">
+                        <Image rounded src={data?.getOneArticle?.url} style={{width: "100%", height: 350, margin:2}} />
+
                     </div>
                     <hr />
                     <div className="editor">
@@ -51,7 +55,7 @@ export const ReadArticle = ({ match }: RouteComponentProps<TParams>) => {
                     </div>
 
                 </Col>
-                <Col md={2}></Col>
+                <Col md={3}></Col>
 
 
             </Row>

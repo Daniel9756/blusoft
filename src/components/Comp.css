@@ -73,10 +73,10 @@
        border-radius: 8px;
        padding: 14px;
        font-weight: 22px;
-       height: 300px;      
+       height: 370px;      
        justify-content: center;
        align-items: center;
-       margin-top: 14px;
+       margin-top: 34px;
    }
 
    .h5{
@@ -148,9 +148,9 @@
    .items{
     display: flex;   
     flex-direction: column;
-margin-top: 84px;
+    margin-top: 84px;
     justify-content: flex-start;
-padding-left: 240px;   }
+    padding-left: 240px;   }
 .bloglink{
     text-decoration: none;
     font-weight: bold;
@@ -185,4 +185,108 @@ padding-left: 240px;   }
     background-color: #F6F7EB;
     color: #3A4E48;
     font-size: 12px;
+}
+.h3{
+    font-size: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+.bio{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.address{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* margin-top: 28px; */
+}
+.addresstext{
+    margin-right: 40px;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.location{
+    padding: 28px;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: #0B4F6C;   
+    margin-left: -100px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 28px;
+    padding: 16px;
+    background-color: #BFC3BA;
+    /* height: 400px; */
+    padding-top: 36px;
+    border-radius: 12px;
+}
+.formelement{
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    width: 460px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #A3333D
+}
+@media (max-width: 1020px) {
+    .input{
+        width: 320px;
+        padding: 6px;
+        border-radius: 4px;
+        border: 1px solid #A3333D;
+    }
+   .items{
+       padding-left: 14px;
+   }
+  }
+
+@media (max-width: 760px) {
+    .input{
+        width: 300px;
+        padding: 6px;
+        border-radius: 4px;
+        border: 1px solid #A3333D
+    }
+    .location{
+        padding: 28px;
+        margin-top: 40px;
+        border-radius: 10px;
+        background-color: #0B4F6C;   
+        margin-left: 10px;
+    }
+  }
+  
+
+.input:active{
+    background-color: 1px solid #A3333D;
+    color: #3A4E48;
+}
+.emailbtn{
+    color: #fff;
+    background-color: #7c3626;
+    border-radius: 12px;
+    padding: 5px;
+    width: 80px
+}
+.emailbtn:hover{
+    background-color: #A3333D;
+}
+.read{
+    margin-top: 40px;
+}
+.artimage{
+    margin-top: 25px;
 }
