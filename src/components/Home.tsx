@@ -1,7 +1,7 @@
 import React from 'react'
 import Mission from './Mission'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-import "./Comp.css"
+// import "./Comp.css"
 import Goal from './Goal'
 import { Featured } from './Featured'
 import { useHistory } from 'react-router-dom'

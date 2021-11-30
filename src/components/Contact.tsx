@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react';
 import { Col, Row, Container, Button } from "react-bootstrap"
 import { MdLocationOn, MdPhone } from "react-icons/md"
 import { IoIosMail } from "react-icons/io"
-import emailjs from 'emailjs-com';
 import { FaHome, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 import { FiLoader } from 'react-icons/fi';
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-import "./Comp.css"
+// import "./Comp.css"
 import { GiSprout, GiTeamIdea, GiIncomingRocket } from 'react-icons/gi';
 
 // import Fade Wobble Slide Flip from 'react-reveal/Fade';

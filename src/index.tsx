@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -14,7 +15,7 @@ import {
 
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql/api',
+  uri: 'https://stark-coast-76523.herokuapp.com/graphql/api',
   cache: new InMemoryCache()
 });
 
