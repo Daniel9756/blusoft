@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
-import "./Comp.css"
+import {Link} from 'react-router-dom'
+// import "./Comp.css"
 import { Container } from 'react-bootstrap'
 
 import { useMutation } from "@apollo/client";

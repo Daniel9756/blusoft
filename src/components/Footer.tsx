@@ -3,7 +3,8 @@ import { Col, Image, Row } from 'react-bootstrap'
 import { FaHome, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { GiTriceratopsHead } from 'react-icons/gi';
 import { MdPermContactCalendar } from 'react-icons/md';
-import { Link } from "react-router-dom"
+import {Link} from 'react-router-dom'
+
 
 
 // GiTriceratopsHead MdPermContactCalendar
@@ -20,16 +21,29 @@ function Footer() {
                         <div className='items'>
                             <div className='list'>
                                 <FaHome style={{ fontSize: 28, color: '#60993E', }} />
-                                <Link to="/" style={{ fontWeight: "bold", color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}>Home</Link>
+                                <Link to="/" style={{ fontWeight: "bold", color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}>
+                                                             
+                                Home
+                                </Link>
                                
                             </div>
-                            <div className='list'>,
+                            <div className='list'>
                                 <GiTriceratopsHead style={{ fontSize: 28, color: '#60993E', }} />
-                                <Link to="/headline" style={{ fontWeight: "bold", color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}>Headline</Link>
+                                <Link to="/headline" style={{ fontWeight: "bold", color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}>
+                               Headline
+                              
                                
-                            </div> <div className='list'>
+                                </Link>
+                               
+                            </div>
+                             <div className='list'>
                                 <MdPermContactCalendar style={{ fontSize: 28, color: '#60993E', }} />
-                                <Link to="/contact" style={{ fontWeight: "bold",color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}> Contact Us</Link>
+                                <Link to="/contact" style={{ fontWeight: "bold",color: '#60993E', textDecoration: 'none', fontSize: 20, marginLeft: 15 }}>
+                                
+                                                             
+                             Contact Us
+                              
+                                 </Link>
 
                                
                             </div>

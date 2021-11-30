@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Image, Row } from 'react-bootstrap'
-import "./Comp.css"
 import { GiBarbedStar, GiStarfighter } from 'react-icons/gi';
 import { FaFileContract, FaHome } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
