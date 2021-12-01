@@ -15,7 +15,7 @@ import {
 
 
 const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql/api',
+  uri: 'https://stark-coast-76523.herokuapp.com/',
   cache: new InMemoryCache()
 });
 
