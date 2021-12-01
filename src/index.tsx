@@ -12,10 +12,11 @@ import {
   gql
 } from "@apollo/client";
 
+  
 
 
 const client = new ApolloClient({
-  uri: 'https://stark-coast-76523.herokuapp.com/',
+  uri: 'https://stark-coast-76523.herokuapp.com/graphql/api',
   cache: new InMemoryCache()
 });
 
