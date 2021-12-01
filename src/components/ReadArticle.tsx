@@ -24,15 +24,14 @@ export const ReadArticle = ({ match }: RouteComponentProps<TParams>) => {
     });
     console.log(loading, error, data)
     if (loading) return <p>Loading ...</p>;
-    if (error) return <div>Error! {error}</div>;;
+    if (error) return <div>Error! {error}</div>;
+
     const contentState = convertFromRaw(JSON.parse(data?.getOneArticle?.body));
     const editorState = EditorState.createWithContent(contentState);
     return (
         <div className='read'>
             <Row>
-                <Col md={3}>
-
-                    
+                <Col md={3}>                    
                 </Col>
                 <Col md={6}>
                    
