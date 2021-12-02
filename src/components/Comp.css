@@ -167,6 +167,20 @@
     font-size: 18px;
     letter-spacing: 2px;
 }
+.editor{
+    font-size: calc(10px + 2vmin);
+    margin-top: 30px;
+}
+.wrapper-class{
+    padding: 6px;
+  border: 1px solid #3A4E48;
+}
+.editor-class{
+    background-color:#FCFCFC;
+    min-height: 350px;
+  padding: 1px;
+  border: 1px solid #3A4E48;
+}
 .RichEditor-styleButton{
     margin: 4px;
 }

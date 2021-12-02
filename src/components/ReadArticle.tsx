@@ -75,6 +75,9 @@ useEffect(()=>{
                     <div className="editor">
                         {data?.getOneArticle && (
                             <Editor
+                            wrapperClassName="wrapper-class"
+                    editorClassName="editor-class"
+                    toolbarClassName="toolbar-class"
                                 blockStyleFn={getBlockStyle}
                                 editorState={editorState} readOnly={true}
                             />
