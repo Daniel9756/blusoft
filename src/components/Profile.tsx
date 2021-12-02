@@ -5,6 +5,7 @@ import { useQuery, gql, useMutation } from "@apollo/client";
 import { GET_AN_AUTHOR } from "./Gql"
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import { FaHome, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { FiLoader } from 'react-icons/fi';
 
 
 type TParams = { id: string };
@@ -18,14 +19,17 @@ function Profile({ match }: RouteComponentProps<TParams>) {
     });
 
     console.log(loading, error, data)
-    if (loading) return <p>Loading ...</p>;
-    if (error) return <div>Error! {error}</div>;
+    // if (loading) return <p>Loading ...</p>;
+    // if (error) return <div>Error! {error}</div>;
 
 
 
 
     return (
         <Container >
+        {loading  && (<div  style={{ display: "flex", justifyContent: "center", alignItems: "center", fontSize: 20, marginTop: '120px' }}><FiLoader  style={{fontSize: '80px'}} /></div>)}
+{data ? 
+
             <Row>
                 <Col md={6}>
                     <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", flexDirection: "column" }}>
@@ -50,9 +54,7 @@ function Profile({ match }: RouteComponentProps<TParams>) {
                         <p className="bio">{data?.getOneAuthor?.bio}</p>
                     </div>
                     <hr />
-                    <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "baseline", }}>
-                        <h4>Role:</h4>           <p className="h3" style={{ marginTop: "22px", fontFamily: "serif", marginLeft: "22px" }}>{data?.getOneAuthor?.role}</p>
-                    </div>
+                   
                     <div>
                         <h2>Social</h2>
                         <a href="https://github.com/Daniel9756" target="_blank"><FaGithubSquare style={{ fontSize: "38px" }} /></a> <a href="https://www.linkedin.com/in/corneliuseze/" target="_blank"><FaLinkedin style={{ fontSize: "38px" }} /></a>
@@ -60,7 +62,7 @@ function Profile({ match }: RouteComponentProps<TParams>) {
                 </Col>
 
 
-            </Row>
+            </Row>  : ''}
         </Container>
     )
 }

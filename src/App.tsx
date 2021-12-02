@@ -27,7 +27,7 @@ function App() {
         <Route path='/headline' exact component={Articles} />
         <Route path='/contact' exact component={Contact} />
         <Route path='/profile/:id' component={Profile} />
-        <Route path='/article/:id' component={ReadArticle} />
+        <Route path='/article/:AuthorId/:id' component={ReadArticle} />
 
       </Switch>
       <Footer />

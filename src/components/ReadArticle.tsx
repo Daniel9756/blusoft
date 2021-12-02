@@ -1,29 +1,41 @@
-import React from 'react'
-import { useParams } from "react-router-dom";
+import React, {useEffect} from 'react'
 
 // @ts-ignore
 import { Editor, EditorState, convertFromRaw } from 'draft-js';
 import "./Comp.css"
-import { RouteComponentProps } from "react-router-dom";
-
+import { RouteComponentProps, Link, useParams } from "react-router-dom";
+import { FiLoader } from 'react-icons/fi';
 import { useQuery, gql } from "@apollo/client";
-import { GET_AN_ARTICLE } from "./Gql"
+import { GET_AN_ARTICLE, GET_AN_AUTHOR } from "./Gql"
 // import ArticleDetail from './ArticleDetail';
 import { Row, Col, Image } from 'react-bootstrap';
 
 
 
-type TParams = { id: string };
+// type TParams = { id: string };
 
-export const ReadArticle = ({ match }: RouteComponentProps<TParams>) => {
+export const ReadArticle = () => {
+    const params: any = useParams()
+const {id, AuthorId}  = params
+    console.log(id, AuthorId)
 
-    const id = match.params.id
+    // const id = match.params.id
 
     const { loading, error, data } = useQuery(GET_AN_ARTICLE, {
         variables: { id }
     });
+
+      const { loading: fetching, error: err, data: writer, refetch  } = useQuery(GET_AN_AUTHOR, {
+        variables: { AuthorId }
+    });
+
+useEffect(()=>{
+    refetch() 
+},[data])
+
+    console.log(writer)
     console.log(loading, error, data)
-    if (loading) return <p>Loading ...</p>;
+    if (loading) return <div>Loading ...</div>;
     if (error) return <div>Error! {error}</div>;
 
     const contentState = convertFromRaw(JSON.parse(data?.getOneArticle?.body));
@@ -31,10 +43,27 @@ export const ReadArticle = ({ match }: RouteComponentProps<TParams>) => {
     return (
         <div className='read'>
             <Row>
-                <Col md={3}>                    
+                <Col md={3}>  
+                {fetching || !writer && (<p>Loading ...</p>)}
+                {writer && writer?.getOneAuthor !== null ? <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", flexDirection: "column" }}>
+                        <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", flexDirection: "column" }}>
+
+                            <div style={{ marginTop: 35 }}>
+                                <Image src="https://res.cloudinary.com/lectua/image/upload/c_fill,h_294,q_88,w_283,x_241,y_200/v1634908595/person_lrod2j.jpg" rounded />
+                            </div>
+                        </div>
+                        <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", flexDirection: "column" }}>
+                            <em className="bio">{writer?.getOneAuthor?.fullname}</em>
+
+                            <em className="bio">{writer?.getOneAuthor?.occupation}</em>
+
+                            <em className="bio">{writer?.getOneAuthor?.email}</em>
+                        </div>
+                    </div> : ''  }
+                        
                 </Col>
                 <Col md={6}>
-                   
+                
                     <div>
                         <h2 className="h3">{data?.getOneArticle?.title}</h2>
                     </div>
@@ -46,6 +75,9 @@ export const ReadArticle = ({ match }: RouteComponentProps<TParams>) => {
                     <div className="editor">
                         {data?.getOneArticle && (
                             <Editor
+                            wrapperClassName="wrapper-class"
+                    editorClassName="editor-class"
+                    toolbarClassName="toolbar-class"
                                 blockStyleFn={getBlockStyle}
                                 editorState={editorState} readOnly={true}
                             />

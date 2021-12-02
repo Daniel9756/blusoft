@@ -13,13 +13,13 @@ export const Art = (props: any) => {
         <Container className="blogroot">
             <div className='title'>
                 <div className='readmore'>
-                    <Link to={`article/${id}`} className='bloglink'>
+                    <Link to={`article/${AuthorId}/${id}`} className='bloglink'>
                         <h5 className='blogtitle'>
                             {title}
                         </h5>
 
                     </Link>
-                    <Link to={`article/${id}`}>
+                    <Link to={`article/${AuthorId}/${id}`}>
                         Read More ...
                     </Link>
 

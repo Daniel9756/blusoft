@@ -167,19 +167,37 @@
     font-size: 18px;
     letter-spacing: 2px;
 }
+.editor{
+    font-size: calc(10px + 2vmin);
+    margin-top: 30px;
+}
+.wrapper-class{
+    padding: 6px;
+  border: 1px solid #3A4E48;
+}
+.editor-class{
+    background-color:#FCFCFC;
+    min-height: 350px;
+  padding: 1px;
+  border: 1px solid #3A4E48;
+}
 .RichEditor-styleButton{
     margin: 4px;
 }
 .RichEditor-activeButton{
     color: #A3333D; 
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .RichEditor-blockquote{
     background-color: #BFC3BA;
     padding: 16px;
     color: #3A4E48;
-    font-size: 12px;
+    font-size: 18px;
     overflow: scroll;
     max-height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .code-block{
     background-color: #F6F7EB;
@@ -187,7 +205,7 @@
     font-size: 12px;
 }
 .h3{
-    font-size: 18px;
+    font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-weight: bolder;

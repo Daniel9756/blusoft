@@ -6,6 +6,8 @@ import { useQuery, gql } from "@apollo/client";
 import { GETPUBLISHED_ARTICLES } from "./Gql"
 import { Row, Container, Col, Image } from 'react-bootstrap'
 import { Art } from "./Art"
+import { FiLoader } from 'react-icons/fi';
+
 
 
 export const Articles = () => {
@@ -17,13 +19,14 @@ export const Articles = () => {
         <Container>
             <Row>
                 <Col md={9}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 0, marginRight: 24, marginLeft: 24 }}>
-                    </div>
-                    {data?.getPublished.map((blog: any) => (
+{loading  && (<div  style={{ display: "flex", justifyContent: "center", alignItems: "center", fontSize: 20, marginTop: '120px' }}><FiLoader  style={{fontSize: '80px'}} /></div>)} 
+             {data ? <div>
+              {data?.getPublished.map((blog: any) => (
                         <Art blog={blog} key={blog.id} />
 
                     ))}
 
+             </div>: '' }                         
                 </Col>
                 <Col md={3}></Col>
             </Row>
