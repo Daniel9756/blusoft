@@ -168,7 +168,7 @@
     letter-spacing: 2px;
 }
 .editor{
-    font-size: calc(10px + 2vmin);
+    font-size: calc(12px + 2vmin);
     margin-top: 30px;
 }
 .wrapper-class{
